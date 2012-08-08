@@ -1,0 +1,1 @@
+kill -9 `ps auxw | grep ameblo.jp | grep perl | awk '{print $2}' | perl -pe 's/\n/ /g'`

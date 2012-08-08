@@ -1,0 +1,1 @@
+echo `date +"%Y-%m-%d %H:%M:%S"` `uptime | awk '{print $10}'` >> loadaverage.log
