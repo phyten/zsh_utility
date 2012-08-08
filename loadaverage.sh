@@ -1,1 +1,1 @@
-echo `date +"%Y-%m-%d %H:%M:%S"` `uptime | awk '{print $10}'` >> loadaverage.log
+echo `date +"%Y-%m-%d %H:%M:%S"` `uptime | awk '{print $10}' | perl -pe 's/,//g'` >> loadaverage.log
