@@ -61,7 +61,7 @@ sub killps_with_loadaverage {
   my $minute = shift || 15;
   my $loadaverage = $self->loadaverage(15);
   printf ("loadaverage is %f\n", $loadaverage);
-  if ($loadaverage > 80.0) {
+  if ($loadaverage > 1.5) {
     print "killing... wait a minute.";
     $self->killps;
   }
